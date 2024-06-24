@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Birthday Message for Family</title>
+    <link rel="stylesheet" href="frnd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="form-container">
+            <h1>Enter Your Name</h1>
+            <form id="details-form">
+                <label for="family-name">Your Name:</label>
+                <input type="text" id="family-name" name="family-name" required>
+                <button type="submit">Proceed</button><br><br>
+                <a href="" class="back">Go back</a>
+            </form>
+        </div>
+        
+        <div class="card" id="card" style="display: none;">
+            <h1>Special Birthday Message for You!</h1>
+            <p id="message"></p>
+            <button onclick="playAudio()">Play Message</button>
+            <audio id="audio" src="message.mp3"></audio>
+        </div>
+    </div>
+    <script src="famz.js"></script>
+</body>
+</html>
